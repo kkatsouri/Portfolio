@@ -1,0 +1,6 @@
+/* NAVBAR STYLING STARTS */
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
