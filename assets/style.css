@@ -7,14 +7,14 @@
 h1{
     color:rgb(14, 92, 21);
     font-size: 2em;
-    border: 20px;;
+    border: 20px;
 }
 
 /* NAVBAR STYLING STARTS */
 
 /* Global */
 * {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     font-family: Arial, Helvetica;
 }
@@ -26,6 +26,7 @@ header {
     align-items: center;
     padding: 40px 50px;
     box-shadow: 0px 2px 15px 2px #cbb2df;
+    border-radius: 12px;
 }
 
 #nav-title {
@@ -63,7 +64,7 @@ header a:hover {
     height: 24.5rem;
     width: 24.5rem;
     margin-top: 2.5rem;
-   margin-right: 15rem;
+    margin-right: 15rem;
   }
   
   .bio {
@@ -83,35 +84,49 @@ header a:hover {
   }
 
   /*Work section*/
-  .card-1 {
-  padding: 60px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  width: 90%;
-  margin: 1% auto;
-    color: rgb(122, 92, 230);
-    box-sizing: border-box;
+
+  .work {
+    padding: 10px;
+    margin: 50px;
     display: flex;
-    justify-content: center;
-    flex-grow: 5 10 auto; 
-    flex-basis: 20em;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-flow: row wrap;
   }
   .card {
-  padding: 60px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  width: 90%;
-  margin: 1% auto;
-    color: rgb(122, 92, 230);
+    flex-grow: 2;
+    width: 49%;
+    height: 100%;
+    padding: 60px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(122, 92, 230);
+    border-color: #cbb2df;
+    border-radius: 12px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0 1 auto;
-    flex-basis: 0;
+    box-shadow: 0px 2px 15px 2px #cbb2df;
   }
-  
+/*
+  .card:nth-child(3n-3) {
+    width: 100%
+  }
+
+  .card:nth-child(3n-1) {
+    width: 50%;
+    flex-flow: row wrap;
+  }
+
+  .card:nth-child(3n-2) {
+    width: 50%;
+    flex-flow: row wrap;
+  }
+*/
+  .card a {
+    color: #cbb2df;
+    font-size: 30px;
+  }
+
   /*Contact Me section*/
 
   .contact{
@@ -119,7 +134,7 @@ header a:hover {
     font-size: 20px;
   }
 
-  .contact a::after {
+  .contact a:hover {
     color: #cbb2df;
   }
 
